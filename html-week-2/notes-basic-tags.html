@@ -1,0 +1,42 @@
+<!DOCTYPE html>  <!--Identifies this document as html-->
+<html lang="en"> <!--"en" is an attribute that defines the language of an element-->
+
+<!--HTML is about properly describing content. Be aware of semantics and hierarchy-->
+
+<!--make sure you indent properly; otherwise, right click + format document-->
+
+<head> <!--within HTML tag, Head and body elements are required; head before body-->
+    <meta charset="UTF-8"> <!--required tag within head; utf-8 is the recommended character set; an empty box is a mismatch between character set and encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML</title> <!--required tag within head; the title seen on browser/tab-->
+</head>
+<body id="top">
+    <!--All content which shows in the browser viewport-->
+    <h1>This is an html page.</h1> 
+    <!--headings go from H1 to H6-->
+    <h2>H2 is a subheading of H1.</h2>
+    <h3>And this is H3.</h3>
+
+    <p>This is a paragraph.</p>
+
+    <p>Here's another paragraph. This is <em>italicized</em>.</p> <!--<em> stands for emphasis; default styling is italicized. <strong> is to strongly emphasize; default syling is bolded. If you want both, you can nest them.-->
+    
+    <h3>Links</h3>
+
+    <p>You can use anchor tags &lt;a&gt; to create a link; it needs an href attribute. For example: <a href ="www.google.ca">Google</a>.</p>
+    <p>You can also do relative links. It will look like this: <a href ="/relative.html>A relative path"></a>.</p>
+    <p>You can also create an internal link to jump to any part of the same page. You can create IDs for each element. </p>
+    <p>This is a link to the top: <a href="#top">TOP</a></p> <!--If you need a dummy link, just use the # symbol as an href-->
+
+
+    <h2>Images</h2>
+    <!--Image source: https://jiminys.com/blogs/news/so-you-want-a-corgi-your-ultimate-guide-to-corgis-->
+    <img src="./corgi.jpg" alt="a corgi jumping" width="500"> <!--src and alt are require attributes for img element-->
+    <!--In html, width and height are always in pixels, so no need to use px unit in the attribute value-->
+
+    <h2>Special Characters</h2>
+
+    <h3>Escaped Characters</h3>
+    <p>&lt;, &gt;, &amp; - the & and the ; in between the names.</p>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>This is the title.</title>
+        <meta name="module 1" content="notes from module 1">
+        <script src ="javascript module 1.js"></script>
+        
+        (The "head" is where you put page information and meta-data. This is also where external style sheets and Javascript files will be stored.)
+
+        <p>The "title" tag define's the page's title. Hence, the element above appears on the browser bar and tab.</p>
+
+    </head>
+
+    <body>
+        <h1>Module 1.</h1> 
+
+        <p>Now this is the body of the page. This is a paragraph. The &lt;strong&gt; tags are used to <strong>bold</strong> text. 
+        While the &lt;em&gt; tags are used to <em>italicize.</em></p>
+
+        <a id="headers"></a>
+            <p>Here's another paragraph. Let's learn about headers.</p>
+            <h1>&lt;h1&gt; is used for the header of the main section. Like the title of the page.</h1>
+            <h2>&lt;h2&gt; is used for subsections. You cannot have a lone h2 element without an h1 element.</h2>
+            <h3>&lt;h3&gt; is used for sub-subsections. Or just the subsection to h2. You get the concept.</h3>
+            <h4>This is how &lt;h4&gt; looks like. DO NOT use the header elements without considering semantics. There is purpose.</h4>
+            <h5>For example, this h5 is a subsection to the h4 above. Do not use header elements to change the font.</h5>
+            <h6>You use CSS for that. And yes, this is &lt;h6&gt;.</h6>
+        
+
+        <h2><a id="anchors">Anchors</a></h2>
+            <p>Let's talk about anchors. Or the &lt;a&gt; element.</p>
+            &lt;a href="<em><strong>page location</strong></em>"&gt;<em>link text</em>&lt/a&gt; adds a link/hyperlink.
+
+            <p>The href value is the path for the link. 
+            <br>This can be an absolute path like "http://www.google.ca". Or a relative (to the page) path.
+            <br>You can also point to an anchor with "#id" to link to an ID named "id". This like will jump to an element or anchor with this name.
+            If the anchor or element is in another page. put the page location first followed by the # and the ID name. 
+            <br>The anchor should be marked at the beginning of the content it is referring to. 
+            <br>Like this:
+            <br>&lt;a id="<em>element</em>"&gt;>&lt;/a&gt;
+
+            <p>Let's try it. I am now going to insert tag to the section where I started talking about headers.</p>
+            <br>Click <a href="#headers"> here</a> to see if it works and goes to the header section. Did it work?
+
+        <h2><a id="images"></a>Images</h2>
+            <p>Let's talk about the &lt;img&gt; element. Here's the correct syntax:</p>
+            <p>&lt;img src="<em>linktothephoto.jpg</em>" alt="here's a photo"&gt;. A closing tag is not necessary.</p>
+
+        <h2>Other elements</h2>
+            <h3>Line break - br</h3>
+                <p>Now let's discuss other elements. For example, the &lt;br&gt; element that represents a line break.</p>
+                I've been using it all along. 
+                <br>See? 
+            <br>DO NOT use br where you would otherwise use a p. This is more for stylistic purposes and avoid using it in MOST cases.
+
+            <h3>Unordered list - ul</h3>
+                <p>The list items need to be enclosed with an &lt;li&gt; tag. For example:</p>
+                <p>Things I need to do today:</p>
+                <ul>
+                    <li>Go through module 1 of web design class</li>
+                    <li>Go through module 2 of Javascript class</li>
+                    <li>Finish JS Lab 1</li>
+                    <li>Do C# Assignment 0</li>
+                </ul>
+
+            <h3>Ordered lists - ol</h3>
+                <p>This refers to numbered lists. We can use the &lt;li&gt; tag with attributes like type="a", type="A", type="i", type="I", type="1" (the default one)</p>
+                <p>You can also use the &lt;start&gt; attribute to declare a starting number other than 1. Use numbers on the attribute. For example:
+                <p>This list starts with ii:</p>
+                <ol type="i" start="2">
+                    <li>the next item will be a iii</li>
+                    <li>then a iv</li>
+                    <li>see?</li>
+                </ol>
+                </p>
+
+            <h3>Special Characters</h3>
+                    <ul> 
+                        <li><strong>&lt; and &gt;</strong></li> 
+                        <p>All this time I've been using the <strong>&amp;gt;</strong> sequence  to show the > (greater than) symbol, and the <strong>&amp;lt;</strong> sequence to show the < (lesser than) symbol. I had just learned to use <strong>&amp;amp;</strong> to have a sequence not automatically render, wdhile it still appears on the source code.
+                        </p>
+
+                        <li>Ampersand (&amp;)</li>
+                        <p>Always use &amp;amp to denote the ampersand symbol &amp; - DO NOT just put the and sign. (Reduce errors and bugs for future you: <a href="https://stackoverflow.com/questions/3493405/do-i-really-need-to-encode-as-amp">Source</a>.)</p>
+                    
+                        <li>Copyright symbol ©</li>
+                        <p>Type directly by holding alt + "0169" on the number pad. If not possible, use <strong>&amp;copy;</strong> or type out <strong>&amp;#169;</strong> or <strong>&amp;#x000A9;</strong>.</p>
+                        <p>NOTE: be mindful of having too many escaped characters in your code. In excess, the code can very quickly become a nightmare to read.</p>
+                    </ul>
+
+                
+            
+    </body>
+
+
+</html>
